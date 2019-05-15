@@ -1,0 +1,45 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack.base.js",
+    "build": "npm run clear && webpack --config webpack.dev.js",
+    "build:prod": "npm run clear && webpack --config webpack.prod.js",
+    "clear": "rimraf build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@atlaskit/theme": "^8.1.7",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/styled": "^10.0.10",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "rimraf": "^2.6.3",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "antd": "^3.16.6",
+    "bee-loading": "^1.1.1",
+    "bee-notification": "^2.0.2-alpha.0",
+    "bee-popover": "^2.0.2-alpha.0",
+    "bee-switch": "^2.0.5-alpha.1",
+    "bee-table": "^2.0.18",
+    "bee-tabs": "^2.0.5-alpha.0",
+    "react-beautiful-dnd": "^9.0.2",
+    "tinper-bee": "2.0.9"
+  }
+}
